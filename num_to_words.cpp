@@ -155,13 +155,13 @@ int main()
 				flag = 0;
 			}
 		}
-		if(flag==1 && length < 34) //Decillion have 34 zero's
+		if(flag==1 && length < 36) //Decillion have 34 zero's
 		{
 			invalid = true;
 		}
 		else
-		{
-			cout<<"Invalid Input !!!"<<endl;
+		{	
+			cout<<"Invalid Input !!!(Number size should be max 35 digit)"<<endl;
 			invalid = false;	
 		}
 	}
