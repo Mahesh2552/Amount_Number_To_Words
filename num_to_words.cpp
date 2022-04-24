@@ -1,6 +1,6 @@
 
 /*Name : Mahesh Ramdas Dubal 
-  Class : MSC IMCA(Industrial Mathematics With Computer Applications)
+  Class : MSC IMCA 2nd Year(Industrial Mathematics With Computer Applications)
   Question : Accept amount from user and print it in words.
 e.g. 156,276,232 is One Hundred Fifty Six Million Two Hundred Seventy Six Thousand ,Two Hundred Thirty Two
 
