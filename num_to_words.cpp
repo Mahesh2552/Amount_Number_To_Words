@@ -203,14 +203,12 @@ int main()
 	while(s>0)
 	{
 		num_to_words(new_str[j],new_str[j+1],new_str[j+2]);
-		if((new_str[j]== '0')&& (new_str[j+1] == '0') &&(new_str[j+2])=='0')
+		//To skip unnecessary Million ,Hundred words e.g. 1000000 is One Million not One Million Hundred
+		//i.e. we skip the call end_word(s) if bucket have all three digits zeros
+		if((new_str[j]!= '0')|| (new_str[j+1] != '0') ||(new_str[j+2])!='0')
 		{
-			cout<<""; //To skip unnecessary Million ,Hundred words e.g. 1000000 is One Million not One Million Hundred
-		}
-		else
-		{
-			end_word(s);
-		}
+			end_word(s); }
+	
 		 //To print Million,Billion,...etc
 		j = j+3; //To pass next 3 parameters to function
 		s--; //Decrementing bucket number
